@@ -3,21 +3,32 @@
 color="\033[0;32m"
 end="\033[0m"
 
-# Configure the patches path
-patchDir="device/xiaomi/merlin/patches"
-echo -e "${color}Patches Path: ${patchDir}${end}"
+# Clone dependencies
+echo -e "${color}Cloning dependencies..."
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
+
+rm -rf device/mediatek/sepolicy_vndr
+git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
+
+rm -rf hardware/mediatek
+git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
 sleep 1
 
-echo -e "${color}Applying patches...${end}"
+# Configure the patches path
+patchDir="device/xiaomi/merlin/patches"
+echo -e "Patches Path: ${patchDir}"
+sleep 1
+
+echo -e "Applying patches..."
 sleep 1
 
 # Patch RenderEngineThreaded
-echo -e "${color}Applying RenderEngineThreaded patches!${end}"
+echo -e "Applying RenderEngineThreaded patches!"
 rm -rf frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp
 cp ${patchDir}/frameworks/native/libs/renderengine/threaded/RenderEngineThreaded.cpp frameworks/native/libs/renderengine/threaded/
 
 # Patch media codec issues
-echo -e "${color}Applying Media Codec patches!${end}"
+echo -e "Applying Media Codec patches!"
 rm -rf frameworks/av/include/media/MediaExtractorPluginHelper.h
 rm -rf frameworks/av/media/libmediaplayerservice/nuplayer/include/nuplayer/GenericSource.h
 rm -rf frameworks/av/media/libmediaplayerservice/nuplayer/include/nuplayer/NuPlayerSource.h
@@ -50,4 +61,4 @@ cp ${patchDir}/frameworks/av/media/extractors/ogg/OggExtractor.cpp frameworks/av
 cp ${patchDir}/frameworks/av/services/mediacodec/seccomp_policy/mediaswcodec-arm.policy frameworks/av/services/mediacodec/seccomp_policy/
 cp ${patchDir}/frameworks/av/services/mediaextractor/mediaextractor.rc frameworks/av/services/mediaextractor/
 
-echo -e "${color}Patch applied successfully.${end}"
+echo -e "Patch applied successfully.${end}"
