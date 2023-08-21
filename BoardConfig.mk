@@ -171,3 +171,9 @@ BOARD_VNDK_VERSION := current
 
 # Wifi
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
+
+# HIDL
+ODM_MANIFEST_SKUS += \
+    merlinnfc
+
+ODM_MANIFEST_MERLINNFC_FILES := $(DEVICE_PATH)/vintf/manifest_merlinnfc.xml

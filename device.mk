@@ -443,9 +443,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sku_props/build_dsds_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_dsds_vendor.prop \
     $(LOCAL_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop
-	
-# HIDL
-ODM_MANIFEST_SKUS += \
-    merlinnfc
-
-ODM_MANIFEST_MERLINNFC_FILES := $(LOCAL_PATH)/vintf/manifest_merlinnfc.xml
