@@ -543,6 +543,20 @@
           <!-- ImsService -->
           <item>com.mediatek.ims</item>
      </string-array>
+     
+    <!-- The list of package IDs that are not allowed to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
+        <item>org.telegram.messenger</item>
+        <item>org.thunderdog.challegram</item>
+        <item>us.zoom.videomeetings</item>
+    </string-array>
+
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
+    </string-array>
 
      <!-- Display cutout configuration -->
      <string name="config_mainBuiltInDisplayCutout">M -947,0 H -1080 V 100 H -947 V 0 Z@right</string>
