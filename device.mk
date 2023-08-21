@@ -437,7 +437,8 @@ PRODUCT_COPY_FILES += \
 
 # SKU
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/properties/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/properties/build_ss_vendor.prop
+    $(LOCAL_PATH)/configs/sku_props/build_dsds_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_dsds_vendor.prop \
+    $(LOCAL_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop
 	
 # HIDL
 ODM_MANIFEST_SKUS += \
