@@ -127,6 +127,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdrm.vendor
 
+# Display config
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_DENSITY := 440
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
