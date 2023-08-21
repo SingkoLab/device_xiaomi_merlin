@@ -56,7 +56,7 @@
     <integer name="config_wifiDelayDisconnectOnImsLostMs">1500</integer>
 
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Redmi Note 9</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Redmi</string>
 
     <!-- List of allowed channels in 2GHz band for softap. If the device doesn't want to restrict
          channels this should be empty. Values is a comma separated channel string and/or channel
