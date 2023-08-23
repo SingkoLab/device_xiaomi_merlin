@@ -17,7 +17,6 @@ sleep 1
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
 echo -e "Patches Path: ${patchDir}"
-sleep 1
 
 echo -e "Applying patches..."
 sleep 1
