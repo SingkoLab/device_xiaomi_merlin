@@ -7,19 +7,16 @@ end="\033[0m"
 echo -e "${color}Cloning dependencies..."
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
 
-rm -rf device/mediatek/sepolicy_vndr
-git clone --quiet https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
 
-rm -rf hardware/mediatek
-git clone --quiet https://github.com/LineageOS/android_hardware_mediatek --depth 1 hardware/mediatek > /dev/null
-sleep 1
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/hardware_mediatek --depth 1 hardware/mediatek > /dev/null
+echo -e "Dependencies cloned successfully!"
 
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
 echo -e "Patches Path: ${patchDir}"
 
 echo -e "Applying patches..."
-sleep 1
 
 # Patch RenderEngineThreaded
 echo -e "Applying RenderEngineThreaded patches!"
