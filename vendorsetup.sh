@@ -12,6 +12,10 @@ git clone --quiet https://github.com/Xiaomi-MT6768-Dev/device_mediatek_sepolicy_
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/hardware_mediatek --depth 1 hardware/mediatek > /dev/null
 echo -e "Dependencies cloned successfully!"
 
+echo -e "Deleting dtbo & kernel artifac"
+rm -rf out/target/product/merlin/obj/DTBO_OBJ
+rm -rf out/target/product/merlin/obj/KERNEL_OBJ
+
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
 echo -e "Patches Path: ${patchDir}"
