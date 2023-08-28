@@ -10,6 +10,8 @@ git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
 
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/hardware_mediatek --depth 1 hardware/mediatek > /dev/null
+
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/gcam-prebuilt --depth 1 xiaomi-mt6768-dev/packages/gcam-prebuilt > /dev/null
 echo -e "Dependencies cloned successfully!"
 
 echo -e "Deleting dtbo & kernel artifac"
