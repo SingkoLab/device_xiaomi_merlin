@@ -16,8 +16,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-DEV_PATH := xiaomi-mt6768-dev
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -95,10 +93,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libutils-v32
-
-# GCam Prebuilt
-PRODUCT_PACKAGES += \
-    gcam-prebuilt
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -417,7 +411,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    $(DEV_PATH)/packages/gcam-prebuilt \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/mediatek
@@ -459,3 +452,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sku_props/build_dsds_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_dsds_vendor.prop \
     $(LOCAL_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop
+
+# Prebuilt Apps
+TARGET_USES_PREBUILT_GCAMERA := true
+TARGET_USES_PREBUILT_MICALCULATOR := true
+include xiaomi-mt6768-dev/packages/prebuilt-apps/prebuilt-apps.mk
