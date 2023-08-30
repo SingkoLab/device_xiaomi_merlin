@@ -1,5 +1,3 @@
-# ROM source patches
-
 color="\033[0;32m"
 end="\033[0m"
 
@@ -16,15 +14,9 @@ git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/prebuilt-apps --depth 1 xiaomi-mt6768-dev/packages/prebuilt-apps > /dev/null
 echo -e "Dependencies cloned successfully!"
 
-echo -e "Deleting dtbo & kernel artifac"
-rm -rf out/target/product/merlin/obj/DTBO_OBJ
-rm -rf out/target/product/merlin/obj/KERNEL_OBJ
-
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
 echo -e "Patches Path: ${patchDir}"
-
-echo -e "Applying patches..."
 
 # Patch RenderEngineThreaded
 echo -e "Applying RenderEngineThreaded patches!"
