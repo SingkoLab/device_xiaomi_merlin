@@ -8,6 +8,10 @@ $(call inherit-product, device/xiaomi/merlin/device.mk)
 # Inherit some common stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Additional Prebuilt Apps
+TARGET_USES_PREBUILT_GCAMERA := true
+TARGET_USES_PREBUILT_MICALCULATOR := true
+
 PRODUCT_NAME := lineage_merlin
 PRODUCT_DEVICE := merlin
 PRODUCT_MANUFACTURER := Xiaomi

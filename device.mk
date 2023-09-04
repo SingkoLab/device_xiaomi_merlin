@@ -454,6 +454,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop
 
 # Prebuilt Apps
-TARGET_USES_PREBUILT_GCAMERA := true
-TARGET_USES_PREBUILT_MICALCULATOR := true
-include xiaomi-mt6768-dev/packages/prebuilt-apps/prebuilt-apps.mk
+$(call inherit-product, xiaomi-mt6768-dev/packages/prebuilt-apps/config.mk)
