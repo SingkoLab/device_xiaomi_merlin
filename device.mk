@@ -464,3 +464,7 @@ ifneq ($(wildcard packages/apps/GoogleCamera_8.1),)
 PRODUCT_PACKAGES += \
     GoogleCamera
 endif
+
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
