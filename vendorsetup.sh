@@ -11,7 +11,7 @@ git clone --quiet https://github.com/Xiaomi-MT6768-Dev/hardware_mediatek --depth
 
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 packages/apps/ViperFX > /dev/null
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/prebuilt-apps --depth 1 xiaomi-mt6768-dev/packages/prebuilt-apps > /dev/null
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 --depth 1 packages/apps/GoogleCamera_8.1 > /dev/null
 
 git clone --quiet https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c --depth 1 prebuilts/clang/host/linux-x86/clang-r487747c
 echo -e "Dependencies cloned successfully!"

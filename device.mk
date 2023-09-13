@@ -459,5 +459,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 endif
 
-# Prebuilt Apps
-$(call inherit-product, xiaomi-mt6768-dev/packages/prebuilt-apps/config.mk)
+# Google Camera
+ifneq ($(wildcard packages/apps/GoogleCamera_8.1),)
+PRODUCT_PACKAGES += \
+    GoogleCamera
+endif
