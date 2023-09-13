@@ -453,5 +453,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sku_props/build_dsds_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_dsds_vendor.prop \
     $(LOCAL_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop
 
+# Lineage Health
+ifneq ($(wildcard hardware/*/interfaces/health),)
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+endif
+
 # Prebuilt Apps
 $(call inherit-product, xiaomi-mt6768-dev/packages/prebuilt-apps/config.mk)
