@@ -3,7 +3,7 @@ end="\033[0m"
 
 # Clone dependencies
 echo -e "${color}Cloning dependencies..."
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/proprietary_vendor_xiaomi --depth 1 vendor/xiaomi > /dev/null
+git clone --quiet https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_merlin --depth 1 vendor/xiaomi/merlin > /dev/null
 
 git clone --quiet https://github.com/Xiaomi-MT6768-Dev/device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
 
