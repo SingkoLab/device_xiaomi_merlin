@@ -15,6 +15,8 @@ git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCam
 
 git clone --depth 1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c prebuilts/clang/host/linux-x86/clang-r487747c
 
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
+
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
 

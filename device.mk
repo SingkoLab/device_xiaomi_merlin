@@ -464,3 +464,9 @@ endif
 # Remove Packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# Custom Package Installer
+ifneq ($(wildcard packages/apps/CustomPackageInstaller),)
+PRODUCT_PACKAGES += \
+    CustomPackageInstaller
+endif
