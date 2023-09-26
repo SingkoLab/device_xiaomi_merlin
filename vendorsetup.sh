@@ -2,23 +2,21 @@ color="\033[0;32m"
 end="\033[0m"
 
 # Clone dependencies
-echo -e "${color}Cloning dependencies..."
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_merlin --depth 1 vendor/xiaomi/merlin > /dev/null
+echo -e "${color}"
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/vendor_xiaomi_merlin vendor/xiaomi/merlin
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/device_mediatek_sepolicy_vndr --depth 1 device/mediatek/sepolicy_vndr > /dev/null
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/hardware_mediatek --depth 1 hardware/mediatek > /dev/null
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/hardware_mediatek hardware/mediatek
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid --depth 1 packages/apps/ViperFX > /dev/null
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/ViperFXAndroid packages/apps/ViperFX
 
-git clone --quiet https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 --depth 1 packages/apps/GoogleCamera_8.1 > /dev/null
+git clone --depth 1 https://github.com/Xiaomi-MT6768-Dev/packages_apps_GoogleCamera_8.1 packages/apps/GoogleCamera_8.1
 
-git clone --quiet https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c --depth 1 prebuilts/clang/host/linux-x86/clang-r487747c
-echo -e "Dependencies cloned successfully!"
+git clone --depth 1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c prebuilts/clang/host/linux-x86/clang-r487747c
 
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
-echo -e "Patches Path: ${patchDir}"
 
 # Patch RenderEngineThreaded
 echo -e "Applying RenderEngineThreaded patches!"
