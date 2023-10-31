@@ -26,12 +26,12 @@ cc_library_shared {
 cc_library_shared {
     name: "libshim_showlogo",
     srcs: ["libshim_showlogo.cpp"],
+    compile_multilib: "32",
     shared_libs: [
         "libui",
         "libgui",
         "libutils",
     ],
-    local_include_dirs: ["include"]
 }
 
 cc_library_shared {
@@ -50,4 +50,11 @@ cc_library_shared {
         "libmedia_headers",
         "libmediametrics_headers",
     ],
+}
+
+cc_library_shared {
+    name: "libshim_watermark",
+    shared_libs: ["libpiex"],
+    srcs: ["libshim_watermark.cpp"],
+    vendor: true,
 }
