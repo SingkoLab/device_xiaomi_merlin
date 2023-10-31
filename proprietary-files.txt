@@ -1144,6 +1144,42 @@ vendor/lib64/libvcodec_oal.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/vendor.mediatek.hardware.mtkcodecservice@1.1.so
 
+# Media (Codec2) - from missi_phoneext4_cn-user 13 TP1A.220624.014 V14.0.1.0.TCVCNXM release-keys (Earth)
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
+vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
+vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+# vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy
+# vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy
+# -vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
+vendor/lib/libavservices_minijail_vendor.so
+vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl-mtk@1.0.so
+vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk-mtk.so
+vendor/lib/libcodec2_mtk_c2store.so
+vendor/lib/libcodec2_mtk_vdec.so
+vendor/lib/libcodec2_mtk_venc.so
+vendor/lib/libcodec2_soft_mtk_alacdec.so
+vendor/lib/libcodec2_soft_mtk_apedec.so
+vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
+vendor/lib/libcodec2_soft_mtk_mp3dec.so
+vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
+vendor/lib/libcodec2_vpp_qt_plugin.so
+vendor/lib/libcodec2_vpp_rs_plugin.so
+vendor/lib/libformatter.so
+vendor/lib64/libavservices_minijail_vendor.so
+vendor/lib64/libcodec2_hidl@1.0.so:vendor/lib64/libcodec2_hidl-mtk@1.0.so
+vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vndk-mtk.so
+vendor/lib64/libcodec2_mtk_c2store.so
+vendor/lib64/libcodec2_mtk_vdec.so
+vendor/lib64/libcodec2_mtk_venc.so
+vendor/lib64/libcodec2_soft_mtk_alacdec.so
+vendor/lib64/libcodec2_soft_mtk_apedec.so
+vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so
+vendor/lib64/libcodec2_soft_mtk_mp3dec.so
+vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
+vendor/lib64/libcodec2_vpp_qt_plugin.so
+vendor/lib64/libcodec2_vpp_rs_plugin.so
+vendor/lib64/libformatter.so
+
 # IMS
 vendor/bin/hw/vtservice_hidl
 vendor/bin/epdg_wod
