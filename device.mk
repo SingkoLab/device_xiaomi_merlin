@@ -409,6 +409,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_audio \
     libshim_beanpod \
+    libshim_bqhelper \
     libshim_showlogo \
     libshim_vtservice \
     libshim_watermark

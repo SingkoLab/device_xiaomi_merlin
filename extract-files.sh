@@ -40,6 +40,7 @@ function blob_fixup {
            "${PATCHELF}" --replace-needed "libcodec2_hidl@1.0.so" "libcodec2_hidl-mtk@1.0.so" "${2}"
             ;;
         vendor/lib*/libcodec2_hidl-mtk@1.0.so)
+            "${PATCHELF}" --add-needed "libshim_bqhelper.so" "${2}"
             "$PATCHELF" --set-soname libcodec2_hidl-mtk@1.0.so "${2}"
             ;;
         vendor/lib*/libcodec2_vndk-mtk.so)

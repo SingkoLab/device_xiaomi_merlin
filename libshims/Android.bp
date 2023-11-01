@@ -35,6 +35,28 @@ cc_library_shared {
 }
 
 cc_library_shared {
+    name: "libshim_bqhelper",
+    srcs: ["libshim_bqhelper.cpp"],
+    vendor: true,
+    header_libs: [
+        "media_plugin_headers",
+    ],
+    shared_libs: [
+        "libbase",
+        "libcutils",
+        "libhidlbase",
+        "libhidlmemory",
+        "liblog",
+        "libstagefright_foundation",
+        "libstagefright_bufferqueue_helper",
+        "libui",
+        "libutils",
+        "libbinder",
+    ],
+    include_dirs: [ "frameworks/av/media/module/bqhelper/include" ],
+}
+
+cc_library_shared {
     name: "libshim_vtservice",
     srcs: ["libshim_vtservice.cpp"],
     compile_multilib: "32",
