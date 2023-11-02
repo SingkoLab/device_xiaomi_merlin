@@ -91,6 +91,9 @@ ro.vendor.cabc.enable=true
 persist.sys.sf.color_saturation=1.1
 persist.sys.sf.native_mode=0
 
+# Codec
+debug.stagefright.ccodec=0
+
 # FM Radio
 ro.vendor.builtin_fm_antenna_support=1
 persist.vendor.connsys.fm_chipid=mt6631
