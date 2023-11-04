@@ -26,7 +26,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libshim_showlogo",
     srcs: ["libshim_showlogo.cpp"],
-    compile_multilib: "32",
+    compile_multilib: "64",
     shared_libs: [
         "libui",
         "libgui",
