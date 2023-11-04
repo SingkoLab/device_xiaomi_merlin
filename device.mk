@@ -101,6 +101,7 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
+    libdrm \
     libsuspend
 
 # DRM
