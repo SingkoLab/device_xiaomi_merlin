@@ -378,7 +378,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
     fstab.mt6768_ramdisk \
+    factory_init.connectivity.rc \
+    factory_init.project.rc \
+    factory_init.rc \
     init.ago.rc \
+    init.cgroup.rc \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6768.rc \
@@ -386,6 +390,12 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.sensor_1_0.rc \
     init.target.rc \
+    init.wlan_drv.rc \
+    meta_init.connectivity.rc \
+    meta_init.modem.rc \
+    meta_init.project.rc \
+    meta_init.rc \
+    multi_init.rc \
     ueventd.mtk.rc
 
 PRODUCT_PACKAGES += \
