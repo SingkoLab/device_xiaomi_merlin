@@ -763,7 +763,6 @@ vendor/firmware/wifi.cfg
 -system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
 
 # GPS
-vendor/bin/hw/android.hardware.gnss@2.1-service-mediatek
 vendor/bin/bip
 vendor/bin/charon
 vendor/bin/ipsec_mon
@@ -771,7 +770,6 @@ vendor/bin/lbs_hidl_service
 vendor/bin/mtk_agpsd
 vendor/bin/starter
 vendor/bin/stroke
-vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc
 vendor/etc/init/init.bip.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/ipsec_mon.rc
@@ -802,7 +800,6 @@ vendor/lib/libmnl.so
 vendor/lib/librpc.so
 vendor/lib/libssl-mdapp.so
 vendor/lib/libviagpsrpc.so
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libcharon-ss.so
