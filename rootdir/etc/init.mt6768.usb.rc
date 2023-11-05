@@ -39,10 +39,13 @@ on post-fs
     symlink /config/usb_gadget/g1/configs/b.1 /config/usb_gadget/g1/os_desc/b.1
     mount functionfs adb /dev/usb-ffs/adb rmode=0770,fmode=0660,uid=2000,gid=2000,no_disconnect=1
 
+on early-boot
+    setprop sys.usb.controller "musb-hdrc"
+    setprop vendor.usb.controller "musb-hdrc"
+
 on boot
     setprop sys.usb.configfs 1
     setprop sys.usb.ffs.aio_compat 0
-    setprop vendor.usb.controller "musb-hdrc"
     setprop vendor.usb.acm_cnt 0
     setprop vendor.usb.acm_port0 ""
     setprop vendor.usb.acm_port1 ""
