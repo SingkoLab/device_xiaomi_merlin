@@ -253,7 +253,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
 PRODUCT_PACKAGES += \
-    libui-v32
+    $(LOCAL_PATH)/vndk/lib/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v32.so
 
 # USB
 PRODUCT_PACKAGES += \
