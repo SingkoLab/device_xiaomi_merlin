@@ -158,6 +158,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     FMRadio
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
