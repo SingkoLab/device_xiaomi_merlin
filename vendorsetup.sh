@@ -14,6 +14,8 @@ git clone --depth 1 https://github.com/SingkoLab/device_mediatek_sepolicy_vndr -
 
 git clone --depth 1 https://github.com/SingkoLab/hardware_mediatek -b 14 hardware/mediatek
 
+git clone --depth 1 https://github.com/SingkoLab/hardware_xiaomi -b 14 hardware/xiaomi
+
 # Configure the patches path
 patchDir="device/xiaomi/merlin/patches"
 
