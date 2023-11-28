@@ -11,10 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/merlin/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Cherish stuff.
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_merlin
+# Cherish Flags
+CHERISH_BATTERY := 5020
+CHERISH_DISPLAY := 6.53
+CHERISH_CHIPSET := MT6769Z
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+
+PRODUCT_NAME := cherish_merlin
 PRODUCT_DEVICE := merlin
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
