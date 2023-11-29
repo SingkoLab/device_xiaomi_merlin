@@ -10,6 +10,8 @@ git clone --depth 1 https://github.com/SingkoLab/vendor_xiaomi_merlin -b 14 vend
 
 git clone --depth 1 https://gitlab.com/MT6768Lab/KernelTree kernel/xiaomi/mt6768
 
+git clone --depth 1 https://github.com/SingkoLab/device_xiaomi_merlin-kernel device/xiaomi/merlin-kernel
+
 git clone --depth 1 https://github.com/SingkoLab/device_mediatek_sepolicy_vndr -b 14 device/mediatek/sepolicy_vndr
 
 git clone --depth 1 https://github.com/SingkoLab/hardware_mediatek -b 14 hardware/mediatek

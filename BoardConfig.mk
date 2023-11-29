@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/xiaomi/merlin
+KERNEL_PATH := device/xiaomi/merlin-kernel
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
@@ -76,6 +77,20 @@ TARGET_KERNEL_CLANG_VERSION := r487747c
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
+
+# Kernel - Prebuilt
+ifeq ($(DEVICE_PREBUILT_KERNEL),true)
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/kernel
+TARGET_PREBUILT_DTB := $(KERNEL_PATH)/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
+
+# Kill lineage kernel build task while preserving kernel
+TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_COPY_FILES += \
+    $(KERNEL_PATH)/dtb.img:dtb.img \
+    $(KERNEL_PATH)/kernel:kernel
+endif
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072                   # 2048      * 64   (none)
