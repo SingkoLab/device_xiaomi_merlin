@@ -125,6 +125,7 @@ ro.lmk.psi_partial_stall_ms=35
 ro.lmk.thrashing_limit=10
 ro.lmk.thrashing_limit_decay=2
 ro.lmk.kill_timeout_ms=100
+ro.lmk.log_stats=false
 
 # MIUI
 sys.fp.miui.token=0
