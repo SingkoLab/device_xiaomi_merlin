@@ -438,7 +438,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service-lazy.mt6768
+    android.hardware.wifi-service.mt6768
 
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
