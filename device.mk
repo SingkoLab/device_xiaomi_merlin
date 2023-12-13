@@ -453,5 +453,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sku_props/build_ss_vendor.prop:$(TARGET_COPY_OUT_VENDOR)/build_ss_vendor.prop
 
+# Android Q lmkd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/core/lmkd/bin/lmkd:$(TARGET_COPY_OUT_SYSTEM)/bin/lmkd \
+    $(LOCAL_PATH)/core/lmkd/etc/init/lmkd.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/lmkd.rc
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/merlin/merlin-vendor.mk)
