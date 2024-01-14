@@ -99,6 +99,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libutils-v32
 
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
