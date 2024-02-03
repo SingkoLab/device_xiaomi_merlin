@@ -768,8 +768,7 @@ vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin|9cd0d79cde76a59ddd8545b1621af1176c5f9
 # FM Radio
 -system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
 
-# GPS
-vendor/bin/hw/android.hardware.gnss@2.1-service-mediatek
+# GPS - from merlin-user-12-SP1A.210812.016-V13.0.1.0.SJOMIXM-release-keys
 vendor/bin/bip
 vendor/bin/charon
 vendor/bin/ipsec_mon
@@ -777,7 +776,6 @@ vendor/bin/lbs_hidl_service
 vendor/bin/mtk_agpsd
 vendor/bin/starter
 vendor/bin/stroke
-vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc
 vendor/etc/init/init.bip.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/ipsec_mon.rc
@@ -803,17 +801,16 @@ vendor/etc/ipsec/strongswan.conf
 vendor/lib/hw/gps.default.so
 vendor/lib/libcrypto-mdapp.so
 vendor/lib/libcurl-md.so
-vendor/lib/libDR.so
-vendor/lib/libmnl.so
 vendor/lib/librpc.so
 vendor/lib/libssl-mdapp.so
 vendor/lib/libviagpsrpc.so
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/lbs_hidl_service-impl.so
 vendor/lib64/libcharon-ss.so
 vendor/lib64/libcrypto-mdapp.so
 vendor/lib64/libcurl-md.so
+vendor/lib64/libDR.so
+vendor/lib64/libmnl.so
 vendor/lib64/libhydra.so
 vendor/lib64/libssl-mdapp.so
 vendor/lib64/libsimaka.so
