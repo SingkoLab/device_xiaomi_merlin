@@ -79,7 +79,14 @@ void load_dalvik_properties()
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 }
 
+void load_matrixx_properties()
+{
+    property_override("ro.matrixx.chipset", "MediaTek Helio G85");
+    property_override("ro.matrixx.maintainer", "Andy | アンディ");
+}
+
 void vendor_load_properties()
 {
     load_dalvik_properties();
+    load_matrixx_properties();
 }

@@ -14,6 +14,11 @@ $(call inherit-product, device/xiaomi/merlin/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+MATRIXX_BATTERY := 5020mAh
+MATRIXX_CHIPSET := mt6768
+MATRIXX_DISPLAY := 1080x2340
+MATRIXX_MAINTAINER := SingkoLab
+
 PRODUCT_NAME := lineage_merlin
 PRODUCT_DEVICE := merlin
 PRODUCT_MANUFACTURER := Xiaomi
