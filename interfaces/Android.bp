@@ -4,7 +4,7 @@ subdirs = [
 
 hidl_package_root {
     name: "com.fingerprints",
-    path: "hardware/xiaomi/interfaces/fingerprints",
+    path: "device/xiaomi/merlin/interfaces/fingerprints",
 }
 
 hidl_package_root {

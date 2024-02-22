@@ -71,6 +71,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.mt6768
 
 PRODUCT_PACKAGES += \
+    com.fingerprints.extension@1.0.vendor \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 PRODUCT_COPY_FILES += \
