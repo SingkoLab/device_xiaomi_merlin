@@ -66,9 +66,6 @@ function blob_fixup {
         lib64/libshowlogo.so)
             "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
             ;;
-        lib/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
-            ;;
         vendor/bin/mnld)
             ;&
         vendor/lib64/libaalservice.so)
