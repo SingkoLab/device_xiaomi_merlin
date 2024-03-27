@@ -431,6 +431,7 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
+    libwifi-hal-wrapper \
     hostapd \
     wpa_supplicant
 
