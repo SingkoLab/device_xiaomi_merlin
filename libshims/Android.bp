@@ -35,24 +35,6 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libshim_vtservice",
-    srcs: ["libshim_vtservice.cpp"],
-    compile_multilib: "32",
-    shared_libs: [
-        "libaudioclient",
-        "libgui",
-        "libstagefright",
-        "libutils",
-        "libbinder",
-    ],
-    header_libs: [
-        "libaudioclient_headers",
-        "libmedia_headers",
-        "libmediametrics_headers",
-    ],
-}
-
-cc_library_shared {
     name: "libshim_watermark",
     shared_libs: ["libpiex"],
     srcs: ["libshim_watermark.cpp"],
