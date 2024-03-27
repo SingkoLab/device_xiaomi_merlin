@@ -8,9 +8,7 @@ export TARGET_KERNEL_BUILD_HOST=SingkoLab
 # Clone dependencies
 git clone --depth 1 https://github.com/SingkoLab/vendor_xiaomi_merlin -b 14 vendor/xiaomi/merlin
 
-git clone --depth 1 https://gitlab.com/MT6768Lab/KernelTree kernel/xiaomi/mt6768
-
-git clone --depth 1 https://github.com/SingkoLab/device_xiaomi_merlin-kernel device/xiaomi/merlin-kernel
+git clone --depth 1 https://github.com/SingkoLab/KernelTree-MT6768 -b 14 kernel/xiaomi/mt6768
 
 git clone --depth 1 https://github.com/SingkoLab/device_mediatek_sepolicy_vndr -b 14 device/mediatek/sepolicy_vndr
 
