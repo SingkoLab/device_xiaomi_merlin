@@ -13,3 +13,5 @@ git clone --depth 1 https://github.com/SingkoLab/KernelTree-MT6768 -b 14 kernel/
 git clone --depth 1 https://github.com/SingkoLab/device_mediatek_sepolicy_vndr -b 14 device/mediatek/sepolicy_vndr
 
 git clone --depth 1 https://github.com/SingkoLab/hardware_mediatek -b 14 hardware/mediatek
+
+git clone --depth 1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
