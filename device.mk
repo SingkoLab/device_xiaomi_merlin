@@ -278,6 +278,9 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlayMerlin \
     WifiOverlayMerlin
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt_overlay/UserLockscreenOverlay/UserLockscreenOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/UserLockscreenOverlay/UserLockscreenOverlay.apk
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.mediatek-libperfmgr
