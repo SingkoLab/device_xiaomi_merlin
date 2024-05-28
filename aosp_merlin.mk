@@ -11,10 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/merlin/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/pb/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := lineage_merlin
+PRODUCT_NAME := aosp_merlin
 PRODUCT_DEVICE := merlin
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
